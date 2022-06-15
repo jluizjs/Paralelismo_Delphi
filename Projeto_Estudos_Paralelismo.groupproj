@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B508ECAD-EFC0-4C02-8532-ED7AF16B5F6D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Project_Delphi_Paralelismo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Project_Delphi_Paralelismo_Loading.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project_Delphi_Paralelismo">
+        <MSBuild Projects="Project_Delphi_Paralelismo.dproj"/>
+    </Target>
+    <Target Name="Project_Delphi_Paralelismo:Clean">
+        <MSBuild Projects="Project_Delphi_Paralelismo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project_Delphi_Paralelismo:Make">
+        <MSBuild Projects="Project_Delphi_Paralelismo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project_Delphi_Paralelismo_Loading">
+        <MSBuild Projects="Project_Delphi_Paralelismo_Loading.dproj"/>
+    </Target>
+    <Target Name="Project_Delphi_Paralelismo_Loading:Clean">
+        <MSBuild Projects="Project_Delphi_Paralelismo_Loading.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project_Delphi_Paralelismo_Loading:Make">
+        <MSBuild Projects="Project_Delphi_Paralelismo_Loading.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project_Delphi_Paralelismo;Project_Delphi_Paralelismo_Loading"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project_Delphi_Paralelismo:Clean;Project_Delphi_Paralelismo_Loading:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project_Delphi_Paralelismo:Make;Project_Delphi_Paralelismo_Loading:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

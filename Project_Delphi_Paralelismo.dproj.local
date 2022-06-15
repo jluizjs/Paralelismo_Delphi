@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/16 23:43:11.000.483,=C:\Users\jluiz\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/09 17:58:43.000.370,=C:\Users\jluiz\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/09 21:11:16.000.396,D:\workspace\Delphi_Paralelismo\Delphi_Paralelismo.pas=C:\Users\jluiz\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/09 21:11:16.000.396,D:\workspace\Delphi_Paralelismo\Delphi_Paralelismo.dfm=C:\Users\jluiz\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/12/09 21:11:58.000.646,D:\workspace\Delphi_Paralelismo\Project_Delphi_Paralelismo.dproj=C:\Users\jluiz\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
